@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.container{
+    color: #fff;
+    width: 100%;
+    height: 108vh;
+    display: flex;
+    flex-direction: row;
+}
+.container div{
+    flex: 50%;
+    margin-left: 30px;
+}
+
+ol{
+    margin-top: 10px;
+    padding: 10px;
+}
+ol li{
+    font-size: 2rem;
+    margin-left: 30px;
+    width: fit-content;
+}
+button{
+    margin: 40px;
+    background-color: rgb(28, 26, 26);
+    text-transform: uppercase;
+    width: 150px;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+button:hover{
+    cursor: pointer;
+    letter-spacing: 2px;
+    border: 1px solid blue;
+    box-shadow: 0 0 20px 15px blue;
+    border-radius: 50px;
+}
+input{
+    margin: 10px 5px;
+    height: 35px;
+    min-width: 30px;
+    padding:10px 5px;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+label{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    display: inline-block;
+}
+#submit{
+    background-color: #ff7200;
+    color: #fff;
+    font-weight: bold;
+}
+#submit:hover{
+    box-shadow: 0 0 15px 10px greenyellow;
+    background-color: rgb(31, 29, 29);
+    border: 1px solid greenyellow;
+    color: #fff;
+}
+.namesOfBooks>li{
+    color: rgb(5, 231, 247);
+    transition: ease 0.3s;
+    margin: 15px 40px;
+}
+.namesOfBooks > li:hover{
+    cursor: pointer;
+    font-size: 2.1rem;
+    color: greenyellow;
+}
+.info{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-color: black;
+    width: fit-content;
+    padding: 0;
+    position: relative;
+    display: none;
+  
+}
+.info>h2>span{
+    font-weight: lighter;
+    font-style: italic;
+    color: grey;
+
+}
+.info>h1{
+    text-transform: uppercase;
+    color: wheat;
+    font-size: 30px;
+}
+.info>h2{
+    margin-left: 30px;
+    font-size: 2rem;
+    color: whitesmoke;
+}
+.displayeDeactivate{
+    display: block;
+    animation: biography 1s ease-out;  
+}
+@keyframes biography {
+    0%{
+        transform: translateY(35%);
+    }
+}
